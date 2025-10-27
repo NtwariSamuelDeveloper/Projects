@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NTWARI Samuel | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #222;
+    }
+
+    /* ===== Navbar ===== */
+    header {
+      background: #111;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #00aaff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00aaff;
+    }
+
+    /* ===== Home ===== */
+    #home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #0077b6, #00b4d8);
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    #home img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid #fff;
+    }
+
+    #home h1 span {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.2rem;
+      padding: 0.7rem 1.5rem;
+      background: #fff;
+      color: #0077b6;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00b4d8;
+      color: #fff;
+    }
+
+    /* ===== Projects ===== */
+    #projects {
+      padding: 4rem 2rem;
+      background: #fff;
+      text-align: center;
+    }
+
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .project-card {
+      background: #f0f0f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* ===== About ===== */
+    #about {
+      padding: 4rem 2rem;
+      background: #e0f7fa;
+      text-align: center;
+    }
+
+    #about p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* ===== Contact ===== */
+    #contact {
+      padding: 4rem 2rem;
+      background: #fff;
+      text-align: center;
+    }
+
+    #contact ul {
+      list-style: none;
+      margin-top: 1rem;
+      line-height: 2;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    footer .socials a {
+      color: #00aaff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer .socials a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .project-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== Navbar ===== -->
+  <header>
+    <nav>
+      <div class="logo">NTWARI <span>Samuel</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Home Section ===== -->
+  <section id="home">
+    <img src="https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg" alt="NTWARI Samuel Profile">
+    <h1>Hello, I'm <span>NTWARI Samuel</span></h1>
+    <p>Frontend Developer | Designer | Creative Coder</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal website built using HTML, CSS, and JS.</p>
+      </div>
+      <div class="project-card">
+        <h3>BACKEND Developer</h3>
+        <p>PHP,node.js,Database(MYSQL)</p>
+      </div>
+      <div class="project-card">
+        <h3>Todo List</h3>
+        <p>Interactive task manager with local storage support.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am <strong>NTWARI Samuel</strong>, a passionate Frontend Developer from Rwanda.
+      I enjoy creating clean, responsive, and user-friendly web interfaces using
+      HTML, CSS, and JavaScript. My goal is to bring creative ideas to life
+      through beautiful design and functional code.
+    </p>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let's connect! You can reach me here:</p>
+    <ul>
+      <li>Email: <a href="mailto:ntwarisamuel421@example.com">ntwarisamuel421@example.com</a></li>
+      <li>Phone: +250 782495362</li>
+      <li>Location:Nyarugenge Kigali</li>
+    </ul>
+  </section>
+
+  
+  <footer>
+    <p>Connect with me:</p>
+    <div class="socials">
+      <a href="https://github.com/NtwariSamuelDeveloper" target="_blank">GitHub</a>
+      <a href="https://facebook.com/Hero Sam" target="_blank">Facebook</a>
+      <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+    </div>
+    <p>&copy; 2025 NTWARI Samuel. All rights reserved.</p>
+  </footer>
+
+  <script>
+    
+    console.log("Portfolio Loaded Successfully - NTWARI Samuel");
+  </script>
+</body>
+</html>
