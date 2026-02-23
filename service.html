@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>InsightFlow | Services</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#fff;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#1abc9c;
+}
+
+nav a{
+    margin:0 12px;
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#1abc9c;
+}
+
+.btn{
+    padding:8px 18px;
+    border:none;
+    background:#1abc9c;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#16a085;
+}
+
+/* HEADER */
+.page-header{
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://picsum.photos/1600/500?business") center/cover;
+    padding:80px 60px;
+    color:white;
+}
+
+.page-header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+/* SERVICES */
+.section{
+    padding:70px 60px;
+    text-align:center;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.service-box{
+    background:white;
+    padding:35px 25px;
+    border-radius:12px;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.service-box:hover{
+    transform:translateY(-8px);
+}
+
+.service-box i{
+    font-size:40px;
+    color:#1abc9c;
+    margin-bottom:20px;
+}
+
+.service-box h3{
+    margin-bottom:15px;
+}
+
+/* CTA */
+.cta{
+    background:#1abc9c;
+    color:white;
+    text-align:center;
+    padding:60px;
+}
+
+.cta button{
+    margin-top:20px;
+    background:white;
+    color:#1abc9c;
+    padding:12px 28px;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#1f2f46;
+    color:white;
+    padding:30px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+    color:white;
+    margin-right:15px;
+    text-decoration:none;
+}
+
+.socials i{
+    margin-left:15px;
+    font-size:20px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">IF <span>InsightFlow</span></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Explore</a>
+        <a href="#">Login</a>
+        <button class="btn">Settings</button>
+    </nav>
+</header>
+
+<!-- HEADER -->
+<section class="page-header">
+    <h1>Our Services</h1>
+    <p>Everything you need to stay informed and inspired</p>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+    <h2>What We Offer</h2>
+
+    <div class="services">
+        <div class="service-box">
+            <i class="fa-solid fa-newspaper"></i>
+            <h3>Newsletter Publishing</h3>
+            <p>We deliver high-quality newsletters curated by experts across different industries.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <h3>Email Subscriptions</h3>
+            <p>Subscribe and receive valuable insights directly in your inbox with zero spam.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Trend Analysis</h3>
+            <p>Stay ahead with weekly analysis of tech, design, business, and lifestyle trends.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fa-solid fa-language"></i>
+            <h3>Multi-Language Content</h3>
+            <p>Access content in multiple languages for a global learning experience.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fa-solid fa-user-shield"></i>
+            <h3>Privacy Focused</h3>
+            <p>Your data is safe. We value privacy and never share your information.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fa-solid fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>Our support team is always ready to help you with any questions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Ready to Get Started?</h2>
+    <p>Join thousands of readers who trust InsightFlow.</p>
+    <button>Subscribe Now</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div>© NtwariDeveloper 2026 All rights reserved.</div>
+
+    <div class="footer-links">
+        <a href="#">Help / FAQ</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="socials">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+</footer>
+
+</body>
+</html>

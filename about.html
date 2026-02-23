@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>InsightFlow | About Us</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#fff;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#1abc9c;
+}
+
+nav a{
+    margin:0 12px;
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#1abc9c;
+}
+
+.btn{
+    padding:8px 18px;
+    border:none;
+    background:#1abc9c;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#16a085;
+}
+
+/* HEADER */
+.page-header{
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://picsum.photos/1600/500?team") center/cover;
+    padding:90px 60px;
+    color:white;
+}
+
+.page-header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+/* SECTIONS */
+.section{
+    padding:70px 60px;
+}
+
+.section h2{
+    margin-bottom:20px;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+    align-items:center;
+}
+
+.about-grid img{
+    width:100%;
+    border-radius:12px;
+}
+
+/* VALUES */
+.values{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.value-box{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.value-box i{
+    font-size:36px;
+    color:#1abc9c;
+    margin-bottom:15px;
+}
+
+/* TEAM */
+.team{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.member{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.member img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.member h3{
+    margin:15px 0 5px;
+}
+
+/* FOOTER */
+footer{
+    background:#1f2f46;
+    color:white;
+    padding:30px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+    color:white;
+    margin-right:15px;
+    text-decoration:none;
+}
+
+.socials i{
+    margin-left:15px;
+    font-size:20px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">IF <span>InsightFlow</span></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="#">About</a>
+        <a href="#">Explore</a>
+        <a href="#">Login</a>
+        <button class="btn">Settings</button>
+    </nav>
+</header>
+
+<!-- HEADER -->
+<section class="page-header">
+    <h1>About InsightFlow</h1>
+    <p>Empowering people with knowledge, one email at a time</p>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+    <div class="about-grid">
+        <div>
+            <h2>Who We Are</h2>
+            <p>
+                InsightFlow is a modern knowledge platform that delivers carefully curated
+                newsletters straight to your inbox. We focus on quality, relevance, and clarity
+                to help you learn faster and smarter.
+            </p>
+            <br>
+            <p>
+                Our mission is to eliminate noise and deliver only meaningful insights across
+                technology, design, business, and lifestyle.
+            </p>
+        </div>
+
+        <img src="https://picsum.photos/600/400?office">
+    </div>
+</section>
+
+<!-- VALUES -->
+<section class="section">
+    <h2>Our Core Values</h2>
+
+    <div class="values">
+        <div class="value-box">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Clarity</h3>
+            <p>Simple, focused, and easy-to-understand content.</p>
+        </div>
+
+        <div class="value-box">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Trust</h3>
+            <p>We respect your privacy and value transparency.</p>
+        </div>
+
+        <div class="value-box">
+            <i class="fa-solid fa-globe"></i>
+            <h3>Accessibility</h3>
+            <p>Knowledge for everyone, everywhere.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TEAM -->
+<section class="section">
+    <h2>Meet the Team</h2>
+
+    <div class="team">
+        <div class="member">
+            <img src="https://picsum.photos/300/300?person1">
+            <h3>Jane Doe</h3>
+            <p>Founder & Editor</p>
+        </div>
+
+        <div class="member">
+            <img src="https://picsum.photos/300/300?person2">
+            <h3>John Smith</h3>
+            <p>Lead Designer</p>
+        </div>
+
+        <div class="member">
+            <img src="https://picsum.photos/300/300?person3">
+            <h3>Alex Brown</h3>
+            <p>Content Strategist</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div>© 2024 InsightFlow. All rights reserved.</div>
+
+    <div class="footer-links">
+        <a href="#">Help / FAQ</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="socials">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+</footer>
+
+</body>
+</html>

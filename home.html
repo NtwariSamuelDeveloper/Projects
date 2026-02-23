@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>InsightFlow</title>
+
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#fff;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#1abc9c;
+}
+
+nav a{
+    margin:0 12px;
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#1abc9c;
+}
+
+.btn{
+    padding:8px 18px;
+    border:none;
+    background:#1abc9c;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#16a085;
+}
+
+/* HERO */
+.hero{
+    height:70vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://picsum.photos/1600/900") center/cover;
+    display:flex;
+    align-items:center;
+    padding-left:70px;
+}
+
+.hero h1{
+    color:white;
+    font-size:48px;
+    margin-bottom:25px;
+}
+
+.primary{
+    padding:14px 30px;
+    font-size:16px;
+}
+
+/* SECTION */
+.section{
+    padding:70px 60px;
+    text-align:center;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+    transition:transform .3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:18px;
+}
+
+.card-links{
+    display:flex;
+    justify-content:space-around;
+    padding-bottom:18px;
+}
+
+.card-links a{
+    text-decoration:none;
+    color:#1abc9c;
+    font-weight:bold;
+}
+
+/* WHY US */
+.why{
+    display:flex;
+    justify-content:space-around;
+    padding:60px;
+    background:#fff;
+}
+
+.why-box{
+    text-align:center;
+}
+
+.why-box i{
+    font-size:34px;
+    color:#1abc9c;
+    margin-bottom:15px;
+}
+
+/* FOOTER */
+footer{
+    background:#1f2f46;
+    color:white;
+    padding:30px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+    color:white;
+    margin-right:15px;
+    text-decoration:none;
+}
+
+.socials i{
+    margin-left:15px;
+    font-size:20px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo"><span>NtwariDevTech</span></div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="explore.html">Explore</a>
+        <a href="login.html">Login</a>
+        <button class="btn">Settings</button>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>Unlock Knowledge,<br>Delivered to Your Inbox</h1>
+        <button class="btn primary">Subscribe Now</button>
+    </div>
+</section>
+
+<!-- FEATURED -->
+<section class="section">
+    <h2>Featured Newsletters</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://picsum.photos/300/200?tech">
+            <h3>Tech Trends</h3>
+            <div class="card-links">
+                <a href="#">View</a>
+                <a href="#">Subscribe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/200?design">
+            <h3>Daily Dose of Design</h3>
+            <div class="card-links">
+                <a href="#">View</a>
+                <a href="#">Subscribe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/200?nature">
+            <h3>Mindful Mornings</h3>
+            <div class="card-links">
+                <a href="#">View</a>
+                <a href="#">Subscribe</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY US -->
+<section class="why">
+    <div class="why-box">
+        <i class="fa-solid fa-lightbulb"></i>
+        <p>Expertly Curated Content</p>
+    </div>
+    <div class="why-box">
+        <i class="fa-solid fa-shield-halved"></i>
+        <p>No Spam, Just Value</p>
+    </div>
+    <div class="why-box">
+        <i class="fa-solid fa-envelope"></i>
+        <p>Stay Informed</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div>©NtwariDeveloper 2026  All rights reserved.</div>
+
+    <div class="footer-links">
+        <a href="#">Help / FAQ</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="socials">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+</footer>
+
+</body>
+</html>
